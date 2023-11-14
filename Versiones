@@ -1,0 +1,84 @@
+diccionario = {"total": 55}
+print(diccionario)
+otrodiccionario = {"copia": 123.23}
+print(otrodiccionario)
+
+diccionario = {"total": 55, "descuento" : True, 15: "15"}
+print(diccionario)
+diccionarioEjemploExcel = {"nombre": 5+2, "telefono": 3363692, "edad": 33, "ciudad": "Pereira"}
+print(diccionarioEjemploExcel)
+
+diccionario = dict(total= 55, descuento= True, subtotal= 15)
+print(diccionario)
+
+usuario = {
+    "nombre": "nombre del usuario",
+    "edad" : 23,
+    "curso" : "curso de python",
+    "skills": {
+        "programacion": True,
+        "bases_de_datos": False
+    },
+    "No medallas": 10
+}
+print(usuario)
+{'nombre': 'nombre del usuario', 'edad': 23, 'curso': 'curso de python', 'skills': {'programacion': True, 'bases_de_datos': False}, 'No medallas': 10}
+
+print(usuario["curso"])
+print(usuario["skills"])
+print(usuario["skills"]["bases_de_datos"])
+curso de python
+{'programacion': True, 'bases_de_datos': False}
+False
+
+diccionario = dict(total = 55, descuento = True, descuento5 = True, subtotal = "15")
+
+print(diccionario)
+print(diccionario["subtotal"])
+{'total': 55, 'descuento': True, 'descuento5': True, 'subtotal': '15'}
+15
+
+diccionario = dict()
+print(diccionario)
+
+diccionario["marca"] = "Mazda"
+print(diccionario["marca"])
+
+diccionario["marca"] = "Subaru"
+print(diccionario["marca"])
+
+print(diccionario)
+{}
+Mazda
+Subaru
+{'marca': 'Subaru'}
+
+diccionario = {"Eduardo": 1, "Fernando": 2, "Uriel": 3, "Rafael":4}
+print(diccionario)
+
+diccionario.keys()
+
+diccionario.values()
+
+diccionario = {
+    "clave1": 234,
+    "cadena": True,
+    "clave3": "Valor 1"
+}
+print(diccionario)
+print(type(diccionario))
+
+versiones = dict(python=2.7, zope=2.13, plone=5.1, django=2.1)
+otras_versiones = versiones.copy()
+print(versiones == otras_versiones)
+print(versiones)
+print(otras_versiones)
+
+secuencia = ("python", "zope", "plone")
+versiones= dict.fromkeys(secuencia)
+
+versiones = dict(python=2.7, zope=2.13, plone=5.1, django=2.1)
+versiones.items()
+
+versiones = dict(python=2.7, zope=2.13, plone=5.1, django=2.1)
+print(versiones)
